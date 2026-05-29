@@ -131,7 +131,7 @@ export default function AboutPage() {
                     <span className="text-xs text-slate-400 font-semibold uppercase mt-0.5">Advisory Board Member</span>
                   </div>
                   <p className="text-xs text-slate-500 leading-relaxed max-w-xs mt-2 border-t border-slate-50 pt-4">
-                    "Our goal is to build long-term advisory trust. We ensure that our clients never worry about data breach, configuration drift, or audit failures."
+                    &quot;Our goal is to build long-term advisory trust. We ensure that our clients never worry about data breach, configuration drift, or audit failures.&quot;
                   </p>
                 </div>
               </div>

@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="text-lg font-bold text-brand-dark mb-3">1. Operational Overview</h2>
               <p>
-                Aman Cloud UAE ("Aman Cloud", "we", "us", "our") takes data protection and privacy extremely seriously. We are committed to safeguarding corporate identities, customer transaction details, and operational records under local UAE sovereign cybersecurity regulations and international ISO 27001 parameters.
+                Aman Cloud UAE (&quot;Aman Cloud&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;) takes data protection and privacy extremely seriously. We are committed to safeguarding corporate identities, customer transaction details, and operational records under local UAE sovereign cybersecurity regulations and international ISO 27001 parameters.
               </p>
             </div>
 
