@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #046bd2;
+  --color-brand-hover: #045cb4;
+  --color-brand-accent: #72b0d8;
+  --color-brand-bg: #f0f5fa;
+  --color-brand-dark: #1e293b;
+  --color-brand-darker: #0f172a;
+  
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1e293b;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Bright Premium Enterprise Dot Grid Background Utilities */
+.dot-grid {
+  background-image: radial-gradient(rgba(4, 107, 210, 0.1) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.dot-grid-light {
+  background-image: radial-gradient(rgba(114, 176, 216, 0.08) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+}
+
+/* Accenture / Deloitte inspired structural lines */
+.corporate-border {
+  border-color: rgba(226, 232, 240, 0.8);
+}
+
+.corporate-grid-cell {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.corporate-grid-cell::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #046bd2, #72b0d8);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.corporate-grid-cell:hover::before {
+  transform: scaleX(1);
+}
+
+/* Executive glassmorphism cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+}
+
+.glow-circle {
+  animation: pulseGlow 8s infinite ease-in-out;
+}
